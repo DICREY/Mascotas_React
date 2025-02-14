@@ -1,0 +1,51 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+
+/* vars  */
+:root {
+    --white: #FFF;
+    --black: #000;
+    --blue:#00F;
+    --red: #bf0000;
+    --card: #508a35 ;
+    --cyan: #008a8a;
+    --gray:#8f8f8f7a;
+    --gray-lighter:#d6d6d6;
+    --font-size: 1rem;
+    --font-size2:1.25rem;
+    --font-size-login-title:1.8rem;
+    --font-size-title:1.25rem;
+    --size-icon-big:6.12rem;
+    --size-icon:2.12rem;
+    --size-icon2:1.8rem;
+    --size-icon-float:1.3rem;
+    --size-card-height:22rem;
+    --size-card-width:17.5rem;
+    --secundary: #193940;
+    --lighter-primary: #9BF272;
+    --second: #BAC8D9;
+    --foreground: #030202;
+    --background: #e0f1ff;
+    --second-background: url("https://github.com/DICREY/Multimedia-Mascotas/blob/main/imgs/iguana_1920x1080_xtrafondos.com.jpg?raw=true") right no-repeat fixed;
+}
+/* font size root  */
+html {
+    font-size: 16px;
+}
+/* Media querys */
+@media (400px < width) {
+    html {
+        font-size: 18px;
+    }
+}
+@media (1600px < width) {
+    html {
+        font-size: 24px;
+    }
+}
+@media (2800px < width) {
+    html {
+        font-size: 34px;
+    }
+}

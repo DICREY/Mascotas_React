@@ -1,0 +1,52 @@
+/* import fonts, vars and designs */
+@import url("bem.css");
+@import url("var.css");
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+::selection {
+    color: var(--white);
+    background: var(--card);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secundary);
+    padding: 10px;
+    width: 100%;
+    color: var(--lighter-primary);
+}
+.logo {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+header span ol{
+    display: flex;
+    list-style: none;
+}
+
+/* dynamic class */
+.inactive {
+    display: none;
+}
+.blur {
+    filter: blur(5px);
+}
+@media (700px < width) {
+    .header {
+        padding: 15px;
+    }
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+}
