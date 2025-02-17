@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded",() => {
     const footer = document.getElementById("footer")
     
     // Dynamic Labels 
-    // const menuDeploy = document.getElementById("menu-deploy")
+    const menuDeploy = document.getElementById("menu-deploy")
     const shopingCart = document.getElementById("Shoping-Cart")
     const shopCantCart = document.getElementById("shop-cant")
     const totalPrice = document.getElementById("total-price")
 
     // btns 
-    // const btnMenu = document.getElementById("btn-menu")
+    const btnMenu = document.getElementById("btn-menu")
     const btnScrollLeft = document.querySelector(".bx-chevron-left")
     const btnScrollRight = document.querySelector(".bx-chevron-right")
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
         let scrollAmount = 0
         let leftScroll = 400
-        setInterval(() => {
+        const scrollInterval = setInterval(() => {
             contenedorAds.scrollBy({ left: leftScroll, behavior: 'smooth' })
             scrollAmount += leftScroll
             if (scrollAmount > (800 + picturesContainer.scrollWidth - picturesContainer.clientWidth)) {
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
         if (existBtnBuy) shopingCart.removeChild(existBtnBuy)
 
-        if (totPrice > 0 ) {
+        if (totPrice) {
             const btnBuy = document.createElement("button")
             btnBuy.className = "btn-add-cart btn-buy-cart"
             btnBuy.type = "button"
@@ -215,8 +215,9 @@ document.addEventListener("DOMContentLoaded",() => {
     }
     
     // Call functions 
-    // dynamicNav(btnMenu,menuDeploy)
-    addPets(contenedorAds)
-    addProducts()
+    dynamicNav(btnMenu,menuDeploy)
+    // addPets(contenedorAds)
+    // addProducts()
+    // createFooter(footer)
     cantProductCart()
 })

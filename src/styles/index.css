@@ -1,5 +1,5 @@
 /* import fonts, vars and designs */
-@import url("./dynamicStyles/bem.css");
+@import url("./dynamicStyles/global.css");
 @import url("./dynamicStyles/var.css");
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 

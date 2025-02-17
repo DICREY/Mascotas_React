@@ -45,11 +45,7 @@ function dynamicNav(btnMenu,menuDeploy) {
     // Event
     btnMenu.addEventListener("click",() => {
         if (btnMenu.className === "bx bx-x btn-menu") {
-            btnMenu.className = "bx bx-menu btn-menu"
-            menuDeploy.classList.add("inactive")
-        } else {
-            btnMenu.className = "bx bx-x btn-menu"
-            menuDeploy.classList.remove("inactive")
-        }
+            btnMenu.className = "bx bx-menu btn-menu inactive"
+        } else btnMenu.className = "bx bx-x btn-menu"
     })
 }

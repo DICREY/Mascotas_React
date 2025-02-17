@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/dynamicStyles/global.css'
 
 const Nav = () => {
   return (
@@ -6,15 +7,15 @@ const Nav = () => {
       <ol>
         <span className="main-search">
           <input className="search" type="search" placeholder="¿What do you search?" />
-          <box-icon name='search-alt' color='#ffffff' className='bx bx-search-alt'></box-icon>
+          <i className='bx bx-search-alt'></i>
         </span>
         <span className="span-btn-menu">
-          <box-icon id="btn-menu" name='menu' color='#ffffff' className='bx bx-menu btn-menu'></box-icon>
+          <i id="btn-menu" className='bx bx-menu btn-menu'></i>
         </span>
         <ol id="menu-deploy" className="menu-deploy inactive">
-          <li><a className="btn-link" href="./template/pets.html">Pets</a></li>
-          <li><a className="btn-link" href="./template/citas.html">Citas</a></li>
-          <li><a className="btn-link" href="./template/services.html">Services</a></li>
+          <li><a className="btn-link" href="/pets.html">Pets</a></li>
+          <li><a className="btn-link" href="/citas.html">Citas</a></li>
+          <li><a className="btn-link" href="/services.html">Services</a></li>
           <li><a className="btn-link" href="#">Dogs</a></li>
           <li><a className="btn-link" href="#">Cats</a></li>
           <li>

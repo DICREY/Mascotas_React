@@ -1,15 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
+import Header from './componentes/MainHeader'
+import MainContent from './componentes/MainContent'
+import Footer from './componentes/Footer'
 import './styles/index.css'
-import './styles/dynamicStyles/bem.css'
+import './styles/dynamicStyles/global.css'
 import './styles/dynamicStyles/var.css'
-import App from './App'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+
+const root = createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
-    <App />
+      <Header/>
+      <MainContent/>
+      <Footer/>
   </React.StrictMode>
 )
 
