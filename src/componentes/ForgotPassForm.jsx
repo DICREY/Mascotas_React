@@ -7,7 +7,8 @@ function ForgotPasswordForm({ onRememberPassword }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setMessage('Enviando nueva contraseña...')
+    setMessage('Enviando nueva contraseña a ' + email)
+    alert(message)
   }
 
   return (

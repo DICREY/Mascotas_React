@@ -35,7 +35,9 @@ const Header = () => {
             <p id="shop-cant" className="shop-cant">0</p>
             <a className="btn-link cart-shop" href="#"><i class='bx bx-cart-alt'></i>Cart</a>
             <ol className="Shoping-Cart">
-              <ol id="Shoping-Cart"></ol>
+              <ol id="Shoping-Cart">
+              {}
+              </ol>
               <p id="total-price"></p>
             </ol>
           </li>

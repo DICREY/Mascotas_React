@@ -102,7 +102,7 @@ const RegisterForm = () => {
           <button type="button" className="btn-send btn-next" onClick={handleNext}>
             Next
           </button>
-          <p>¿Do you have account? <a className="link" href="../template/login.html">Login</a></p>
+          <p>¿Do you have account? <a className="link" href="/login.html">Login</a></p>
         </section>
 
         {/* Secondary Section */}

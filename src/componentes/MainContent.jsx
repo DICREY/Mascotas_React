@@ -35,6 +35,7 @@ const MainContent = () => {
         <p className="titles">Pet Products</p>
         <ProductsTarget />
       </section>
+      
     </main>
   )
 }

@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 
-function FormLoginUser({OnForgotPass}) {
+function FormLoginUser({onForgotPass}) {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
     const [message,setMessage] = useState('')
@@ -41,7 +41,7 @@ function FormLoginUser({OnForgotPass}) {
                 <span className="span-input password">Password</span>
             </div>
             <p id="message" className="message">{message}</p>
-            <a id="forgot-password" className="link" href="#" onClick={OnForgotPass}>
+            <a id="forgot-password" className="link" href="#" onClick={onForgotPass}>
                 ¿Do you forgot password?
             </a>
             <button id="btn-send" className="btn-send" type="submit">Send</button>

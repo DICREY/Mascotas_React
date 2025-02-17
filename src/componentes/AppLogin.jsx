@@ -8,6 +8,7 @@ const App = () => {
   const [showForgotPassword, setShowForgotPassword] = useState(false)
 
   const handleForgotPassword = () => {
+    // preventDefault()
     setShowForgotPassword(true)
   }
 
